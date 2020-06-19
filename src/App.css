@@ -44,3 +44,31 @@
   align-items: center;
   justify-content: flex-start;
 }
+.flex-row-vertically-centered-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.step span {
+  margin-right: 10px;
+  border-radius: 100%;
+  transition: background-color 0.4s;
+  background-color: transparent;
+  padding: 7px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+}
+
+.step.active span {
+  background-color: #08c;
+  color: white;
+}
