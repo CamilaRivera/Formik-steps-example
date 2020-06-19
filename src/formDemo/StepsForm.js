@@ -58,6 +58,10 @@ const StepsForm = () => {
       return;
     }
     if (stepIndex < currentStep) {
+      // only submit form when im not insubmit step
+      if (currentStep < steps.length - 1) {
+        await checkIfFormIsValid(formRef);
+      }
       saveCurrentStepFormData();
       setCurrentStep(stepIndex);
     }
