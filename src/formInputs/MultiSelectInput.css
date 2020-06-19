@@ -1,0 +1,14 @@
+.tds-react-select > div {
+  padding: 0.5rem 1rem;
+  border: 1px solid #54595f;
+  border-radius: 4px;
+  min-height: 3.25rem;
+  color: #54595f;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.tds-react-select > div svg {
+  color: green;
+} 

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+
+.button-container {
+    display: flex;
+    padding-top: 20px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.field-container {
+  padding: 0.5rem 1rem;
+  border: 1px solid #54595f;
+  border-radius: 4px;
+  min-height: 3.25rem;
+  color: #54595f;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.form-container {
+  display: flex;
+  min-width: 800px;
+}
+
+.flex-1 {
+ flex: 1;
+}
+
+.DayPickerNavigation_button {
+  color: #2b8000;
+}
+
+.logo-formik {
+  height: 300px;
+}
