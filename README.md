@@ -30,8 +30,6 @@
 
 ## Getting Started
 
-Important: You need to have acces to Telus repository.
-
 1) Fork this repository, then clone your fork of this repository
 2) Install dependencies with `npm i`
 3) Run `npm start`
