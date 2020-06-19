@@ -1,24 +1,5 @@
-# Formik example with TDS integration
+# Multiple step form with validations and step fields
 
-
-## About Formik
-
-- Formik is a library that helps you with the 3 most annoying parts of a form: 
-1. Getting values in and out of form state 
-2. Validation and error messages 
-3. Handling form submission
-
-## Formik with validations
-|Formik with validations|
-|---|
-|![Validations](docs/formik_with_validations.gif)|
-
-## Formik with custom fields
-|Formik with custom fields|
-|---|
-|![Custom Fields](docs/formik_custom_form.gif)|
-
-  
 ## Technical Information / Stack
 - React 
 - Formik
@@ -30,6 +11,7 @@
 - "@tds/community-date-picker": "^1.0.2",
 - "@tds/core-css-reset": "^2.0.5",
 - "@tds/core-notification": "^3.0.25",
+- "@tds/core-step-tracker": "^4.0.33",
 - "@testing-library/jest-dom": "^4.2.4",
 - "@testing-library/react": "^9.5.0",
 - "@testing-library/user-event": "^7.2.1",
