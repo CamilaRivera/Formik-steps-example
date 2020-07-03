@@ -8,7 +8,7 @@ import DisplayProps  from './DisplayProps';
 import StepTracker from './StepTracker';
 
 const checkIfFormIsValid = async formRef => {
-  await formRef.current.submitForm();
+  await formRef.current.submitForm(); //  to trigger the validations
   return Object.keys(formRef.current.errors).length === 0;
 };
 
@@ -46,8 +46,12 @@ const StepsForm = () => {
       // Save anyway what ever values there are
     }
   };
-  const previous = () => {
+  const previous = async () => {
     if (currentStep > 0) {
+      if (currentStep < steps.length - 1) {
+        // this is not submit step, validate before saving to trigger validations and save errors
+        await checkIfFormIsValid(formRef);
+      }
       saveCurrentStepFormData();
       setCurrentStep(currentStep - 1);
     }
@@ -60,6 +64,7 @@ const StepsForm = () => {
     if (stepIndex < currentStep) {
       // only submit form when im not insubmit step
       if (currentStep < steps.length - 1) {
+        // this is not submit step, validate before saving to trigger validations and save errors
         await checkIfFormIsValid(formRef);
       }
       saveCurrentStepFormData();
